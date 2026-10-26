@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "holding-steuer-dach"
+version = "1.0.0"
+description = "DACH Holding Tax Advantage, ? 8b KStG (DE), ? 10 KStG (AT) & Art. 69 DBG (CH) Calculator Engine 2026"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "DACH Digitalwerk"}]
+
+[project.scripts]
+dach-holding = "holding_steuer_dach.cli:main"
